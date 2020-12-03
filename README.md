@@ -8,7 +8,7 @@ These results may differ depending on the processor architecture. So it’s good
 ### I performed at different times and sometimes the result was not always the same. Here are the results:
 In most results, the IsNumber and SwitchStatement method are in the top positions.
 
-======================================================================================================================================
+===============================================================================
 
 BenchmarkDotNet=v0.12.1, OS=Windows 10.0.19042
 Intel Core i7-10510U CPU 1.80GHz, 1 CPU, 8 logical and 4 physical cores
@@ -27,7 +27,8 @@ Intel Core i7-10510U CPU 1.80GHz, 1 CPU, 8 logical and 4 physical cores
 |             SwitchStatementNoInlining | 52.34 ns | 1.099 ns | 1.576 ns |    4 |     - |     - |     - |         - |
 | SwitchStatementAggressiveOptimization | 53.56 ns | 1.093 ns | 0.912 ns |    4 |     - |     - |     - |         - |
 
-======================================================================================================================================
+===============================================================================
+
 BenchmarkDotNet=v0.12.1, OS=Windows 10.0.19042
 Intel Core i7-10510U CPU 1.80GHz, 1 CPU, 8 logical and 4 physical cores
 .NET Core SDK=5.0.100
@@ -46,7 +47,8 @@ Intel Core i7-10510U CPU 1.80GHz, 1 CPU, 8 logical and 4 physical cores
 | SwitchStatementAggressiveOptimization | 53.56 ns | 0.262 ns | 0.245 ns |    5 |     - |     - |     - |         - |
 
 
-======================================================================================================================================
+===============================================================================
+
 BenchmarkDotNet=v0.12.1, OS=Windows 10.0.19042
 Intel Core i7-10510U CPU 1.80GHz, 1 CPU, 8 logical and 4 physical cores
 .NET Core SDK=5.0.100
@@ -64,7 +66,7 @@ Intel Core i7-10510U CPU 1.80GHz, 1 CPU, 8 logical and 4 physical cores
 | SwitchStatementAggressiveOptimization | 53.51 ns | 0.443 ns | 0.393 ns |    4 |     - |     - |     - |         - |
 
 
-======================================================================================================================================
+===============================================================================
 
 BenchmarkDotNet=v0.12.1, OS=Windows 10.0.19042
 Intel Core i7-10510U CPU 1.80GHz, 1 CPU, 8 logical and 4 physical cores
@@ -83,7 +85,8 @@ Intel Core i7-10510U CPU 1.80GHz, 1 CPU, 8 logical and 4 physical cores
 |             SwitchStatementNoInlining | 63.98 ns | 0.704 ns | 0.624 ns | 63.90 ns |    7 |     - |     - |     - |         - |
 | SwitchStatementAggressiveOptimization | 60.64 ns | 0.628 ns | 0.588 ns | 60.49 ns |    6 |     - |     - |     - |         - |
 
-======================================================================================================================================
+===============================================================================
+
 BenchmarkDotNet=v0.12.1, OS=Windows 10.0.19042
 Intel Core i7-10510U CPU 1.80GHz, 1 CPU, 8 logical and 4 physical cores
 .NET Core SDK=5.0.100
@@ -102,7 +105,7 @@ Intel Core i7-10510U CPU 1.80GHz, 1 CPU, 8 logical and 4 physical cores
 | SwitchStatementAggressiveOptimization | 63.76 ns | 0.812 ns | 0.720 ns |    6 |     - |     - |     - |         - |
 
 
-======================================================================================================================================
+===============================================================================
 
 BenchmarkDotNet=v0.12.1, OS=Windows 10.0.19042
 Intel Core i7-10510U CPU 1.80GHz, 1 CPU, 8 logical and 4 physical cores
@@ -122,7 +125,8 @@ Intel Core i7-10510U CPU 1.80GHz, 1 CPU, 8 logical and 4 physical cores
 | SwitchStatementAggressiveOptimization | 61.50 ns | 0.593 ns | 0.555 ns |    5 |     - |     - |     - |         - |
 
 
-======================================================================================================================================
+===============================================================================
+
 BenchmarkDotNet=v0.12.1, OS=Windows 10.0.19042
 Intel Core i7-10510U CPU 1.80GHz, 1 CPU, 8 logical and 4 physical cores
 .NET Core SDK=5.0.100
