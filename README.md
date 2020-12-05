@@ -24,6 +24,14 @@ Intel Core i7-10510U CPU 1.80GHz, 1 CPU, 8 logical and 4 physical cores
   [Host]     : .NET Core 5.0.0 (CoreCLR 5.0.20.51904, CoreFX 5.0.20.51904), X64 RyuJIT
   DefaultJob : .NET Core 5.0.0 (CoreCLR 5.0.20.51904, CoreFX 5.0.20.51904), X64 RyuJIT
 
+|           Method |     Mean |    Error |   StdDev | Rank | Gen 0 | Gen 1 | Gen 2 | Allocated |
+|----------------- |---------:|---------:|---------:|-----:|------:|------:|------:|----------:|
+|     IF_Substract | 19.40 ns | 0.382 ns | 0.319 ns |    1 |     - |     - |     - |         - |
+|     IF_Compare09 | 19.27 ns | 0.126 ns | 0.112 ns |    1 |     - |     - |     - |         - |
+| Switch_Statement | 32.15 ns | 0.356 ns | 0.333 ns |    2 |     - |     - |     - |         - |
+|          IsDigit | 38.79 ns | 0.716 ns | 0.635 ns |    3 |     - |     - |     - |         - |
+
+==================================================
 
 |           Method |     Mean |    Error |   StdDev | Rank | Gen 0 | Gen 1 | Gen 2 | Allocated |
 |----------------- |---------:|---------:|---------:|-----:|------:|------:|------:|----------:|
@@ -43,14 +51,6 @@ Intel Core i7-10510U CPU 1.80GHz, 1 CPU, 8 logical and 4 physical cores
 
 ==================================================
 
-|           Method |     Mean |    Error |   StdDev | Rank | Gen 0 | Gen 1 | Gen 2 | Allocated |
-|----------------- |---------:|---------:|---------:|-----:|------:|------:|------:|----------:|
-|     IF_Substract | 19.40 ns | 0.382 ns | 0.319 ns |    1 |     - |     - |     - |         - |
-|     IF_Compare09 | 19.27 ns | 0.126 ns | 0.112 ns |    1 |     - |     - |     - |         - |
-| Switch_Statement | 32.15 ns | 0.356 ns | 0.333 ns |    2 |     - |     - |     - |         - |
-|          IsDigit | 38.79 ns | 0.716 ns | 0.635 ns |    3 |     - |     - |     - |         - |
-
-==================================================
 
 |           Method |     Mean |    Error |   StdDev | Rank | Gen 0 | Gen 1 | Gen 2 | Allocated |
 |----------------- |---------:|---------:|---------:|-----:|------:|------:|------:|----------:|
