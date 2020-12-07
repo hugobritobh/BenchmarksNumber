@@ -1,6 +1,6 @@
 using BenchmarkDotNet.Attributes;
 
-namespace Benchmarks
+namespace BenchmarksNumber
 {
     [RankColumn]
     [MemoryDiagnoser]
@@ -8,6 +8,42 @@ namespace Benchmarks
     {
         private string _input = "a1b2c3d4e5f6g7h8i9j0";
 
+        [Benchmark]
+        public int IF_Compare09()
+        {
+            int number = 0;
+            foreach (char value in _input)
+            {
+                if (value >= '0' && value <= '9')
+                    number++;
+            }
+            return number;
+        }
+
+        [Benchmark]
+        public int IsDigit()
+        {
+            int number = 0;
+            foreach (char value in _input)
+            {
+                if (char.IsDigit(value))
+                    number++;
+            }
+            return number;
+        }
+
+        [Benchmark]
+        public int IF_Substract()
+        {
+            int number = 0;
+            foreach (char value in _input)
+            {
+                if ((value - '0') <= 9)
+                    number++;
+            }
+
+            return number;
+        }
 
         [Benchmark]
         public int Switch_Statement()
@@ -33,45 +69,5 @@ namespace Benchmarks
             }
             return number;
         }
-
-        [Benchmark]
-        public int IF_Compare09()
-        {
-            int number = 0;
-            foreach (char value in _input)
-            {
-                if (value >= '0' && value <= '9')
-                    number++;
-            }
-            return number;
-        }
-
-
-        [Benchmark]
-        public int IsDigit()
-        {
-            int number = 0;
-            foreach (char value in _input)
-            {
-                if (char.IsDigit(value))
-                    number++;
-            }
-            return number;
-        }
-
-
-        [Benchmark]
-        public int IF_Substract()
-        {
-            int number = 0;
-            foreach (char value in _input)
-            {
-                if ((value - '0') <= 9)
-                    number++;
-            }
-
-            return number;
-        }
-
     }
 }

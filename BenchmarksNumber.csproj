@@ -6,6 +6,7 @@
 		<Authors>Hugo de Brito V. R. Alves</Authors>
 		<Company>Hugo de Brito V. R. Alves</Company>
 		<Description>Benchmarks</Description>
+		<AssemblyName>BenchmarksNumber</AssemblyName>
 	</PropertyGroup>
 
 	<ItemGroup>

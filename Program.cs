@@ -1,8 +1,6 @@
 ﻿using BenchmarkDotNet.Running;
-using System;
-using System.Threading.Tasks;
 
-namespace Benchmarks
+namespace BenchmarksNumber
 {
     class Program
     {
@@ -11,7 +9,4 @@ namespace Benchmarks
             BenchmarkRunner.Run<IsNumberBenchmark>();
         }
     }
-
-  
 }
-
