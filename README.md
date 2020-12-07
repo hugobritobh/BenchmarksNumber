@@ -17,7 +17,7 @@ Some methods had different results depending on the position they were in. I bel
 The method that always kept the same result was the IF_Substract
 
 ========================================================================
-
+#### Windows
 BenchmarkDotNet=v0.12.1, OS=Windows 10.0.19042
 Intel Core i7-10510U CPU 1.80GHz, 1 CPU, 8 logical and 4 physical cores
 .NET Core SDK=5.0.100
