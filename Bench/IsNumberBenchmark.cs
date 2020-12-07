@@ -6,7 +6,7 @@ namespace BenchmarksNumber
     [MemoryDiagnoser]
     public class IsNumberBenchmark
     {
-        private string _input = "a1b2c3d4e5f6g7h8i9j0";
+        private string _input = ".1#2%3 4 Ä5 6-7ç8,9>0";
 
         [Benchmark]
         public int IF_Compare09()
@@ -32,18 +32,18 @@ namespace BenchmarksNumber
             return number;
         }
 
-        [Benchmark]
-        public int IF_Substract()
-        {
-            int number = 0;
-            foreach (char value in _input)
-            {
-                if ((value - '0') <= 9)
-                    number++;
-            }
+        //[Benchmark]
+        //public int IF_Substract()
+        //{
+        //    int number = 0;
+        //    foreach (char value in _input)
+        //    {
+        //        if ((value - '0') <= 9)
+        //            number++;
+        //    }
 
-            return number;
-        }
+        //    return number;
+        //}
 
         [Benchmark]
         public int Switch_Statement()
