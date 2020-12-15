@@ -53,7 +53,7 @@ Intel Core i7-10510U CPU 1.80GHz, 1 CPU, 8 logical and 4 physical cores
 |     IF_Compare09 | 31.96 ns | 0.287 ns | 0.269 ns |    2 |     - |     - |     - |         - |
 |          IsDigit | 38.22 ns | 0.455 ns | 0.426 ns |    3 |     - |     - |     - |         - |
 
- ####  Ubuntu 20.04 (windows - WSL2) ---------------------------------------------------------------
+ ####  ------------------------------- Ubuntu 20.04 (windows - WSL2) --------------------------------------------------------
 
 BenchmarkDotNet=v0.12.1, OS=ubuntu 20.04
 Intel Core i7-10510U CPU 1.80GHz, 1 CPU, 8 logical and 4 physical cores
